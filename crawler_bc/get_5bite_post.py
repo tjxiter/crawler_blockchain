@@ -19,7 +19,6 @@ def get_info(pid):
     spider = Spider()
     post_url = 'http://www.5bite.com/post/%s.html' % pid
 
-    import pdb; pdb.set_trace()
     soup = spider.getSoup(post_url)
 
     title = soup.find('h1', {'class': 'post-title'}).text
