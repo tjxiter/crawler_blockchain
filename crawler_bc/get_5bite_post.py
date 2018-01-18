@@ -5,8 +5,7 @@ import sys
 sys.path.append('../')
 sys.path.append('../../')
 
-
-from spider_bc_news.spider import Spider
+import spider
 
 
 def getJson(soup):
